@@ -25,9 +25,10 @@ echo ""
 read -p "" desc
 git commit -m "$desc"
 
-# Asks user if they want to push their commit
+# Asks user if they want to push their commit.
+
 echo ""
-echo "Below is the output from git remote -v, if fatal, there is no remote press ctr-c and add remote. Please wait for server request if there is a delay"
+echo "Below is the output from git remote -v, if fatal, there is no remote press ctr-c and add remote. Please wait for server request if there is a delay."
 echo ""
 git ls-remote
 echo ""
