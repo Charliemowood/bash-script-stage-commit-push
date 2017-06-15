@@ -1,6 +1,6 @@
 # Bash script
 
-This is a simple and imperfect bash script for helping automate staging, commit and pushing to git. 
+This is a simple and imperfect bash script for helping automate staging, committing and pushing to git. 
 
 ## Suggestions
 
