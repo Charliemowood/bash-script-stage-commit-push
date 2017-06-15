@@ -25,22 +25,16 @@ echo ""
 read -p "" desc
 git commit -m "$desc"
 
-# Asks user if they want to push their commit.
-
-read -n1 -p "Do you want to add a remote? (y/n)" doit1
-
-case $doit1 in
-  y|Y) read -p "" push ;;
-  $push
-  n|N) echo " Skipping "  ;;
-  *) echo dont know ;;
-esac
-
-
+# Asks user if they want to push their commit
+echo ""
+echo "Below is the output from git remote -v, if fatal, there is no remote press ctr-c and add remote. Please wait for server request if there is a delay"
+echo ""
+git ls-remote
+echo ""
 read -n1 -p "Do you want to push to master? " doit
 
 case $doit in
-  y|Y) git push ;;
+  y|Y) git push origin master ;;
   n|N) echo " Exiting " exit ;;
-  *) echo dont know ;;
+  *) echo "dont know" ;;
 esac
