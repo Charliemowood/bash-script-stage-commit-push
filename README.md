@@ -10,12 +10,12 @@ git clone git@github.com:Charliemowood/bash-script-stage-commit-push.git && cd b
 ```
 
 
-2. Run the following on the file to give it root permissions, otherwise you will to be root or use sudo to run the script. 
+2. Run the following command on the file to give it root permissions, if you do not do this you will need to be root or use sudo to run the script. 
 ```bash
 chmod +x git.sh
 ```
 
-3. For usage only on your user and so you can run the script from any directory but the script in ~/repository. 
+3. For usage for your user only: run the command below to put the script in the ~/.bin repository. This allows you to run the script in any repository without having to refer to the scripts location.
 ```bash
 mv git.sh ~/.bin
 ```
