@@ -20,7 +20,9 @@ chmod +x git.sh
 mv git.sh ~/.bin
 ```
 
-4. To evoke the script. 
+4. Navigate to the directory where you want to run this script.
+
+5. To evoke the script. 
 ```bash
 git.sh
 ```
